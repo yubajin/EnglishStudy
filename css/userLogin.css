@@ -1,0 +1,19 @@
+.login_others{
+	text-align: center;
+	padding-top:32%;	
+}
+	
+.login_tips{text-align: right;}
+#load_platform li{
+			width:60px;
+			height:60px;
+			margin-left: 5%;
+			border-radius:50%;
+			overflow: hidden;
+			float: left;
+		}
+#load_platform li img{
+			width: 60px;
+			height: 60px;
+			}
+	

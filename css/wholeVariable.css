@@ -1,0 +1,88 @@
+*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#search{
+		width: 100%;
+		text-align: center;
+	}
+	#hometable{
+		width: 100%;
+		height: auto;
+	}
+	#search_td2{
+		width: 40px;
+	}
+	#search input{
+		width: 100%;
+		height: 40px;
+	}
+	#page_pic_swrap{
+		width: 100%;
+		height: 260px;
+		
+	}
+	#page_pic{
+		background-image:url(../img/imgMenu.jpg);
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		text-align: center;
+	}
+	#page_pic span{
+		position: relative;
+		top: 140px;
+		font-size: 15px;
+		font-family: "仿宋";
+		color: white;
+	}
+	
+	#title{
+		text-align: center;
+		margin-left: 10px;
+		font-size: 20px;
+	}
+	#sectitle{
+		text-align: left;
+		margin-left: 10px;
+		font-size: 14px;
+		display: block;
+		padding-top: 4px;
+		color: gray;
+	}
+	#article3_span{
+		text-align: center;
+		display: block;
+		color: red;
+	}	
+	a{
+		color: white;
+		text-decoration: none;
+	}
+	ul li {
+		/*background: greenyellow;*/
+	}
+	ul li a img{
+		padding: 4px 5px ;
+		height: 100%;
+		width: height;
+	}
+	#title{
+			text-align: center;
+			margin-left: 10px;
+			font-size: 20px;
+		}
+	#sectitle{
+		text-align: left;
+		margin-left: 10px;
+		font-size: 14px;
+		display: block;
+		padding-top: 4px;
+		color: gray;
+	}
+	.red{
+		color: red;
+	}
+	#videocontent{
+		text-align: center;
+	}
