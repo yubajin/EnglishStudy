@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/userLogin.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js" ></script>
+
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>登录</h1>
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back">返回</a>
+			</div>
+			<div data-role="main">
+				<form method="post" action="">
+			       <div class="ui-field-contain">
+			         <input type="text" name="user" id="user" placeholder="请输入你的用户名"  required="required">
+			         <input type="password" name="passwd" id="passwd" placeholder="请输入你的密码"  required="required">
+			      </div>
+			      <input type="submit" value="登录">
+			      <h5 class="login_tips">
+				      <a href="#" data-inline="true" >忘记密码?</a>
+	        		  <a href="register.html" data-ajax="false" data-inline="true" >创建帐户</a>
+			      </h5>
+			      
+				  <h4 class="login_others">第三方登录</h4>
+				  	<ul id="load_platform">
+				  		<li><img src="img/qq.png" /></li>
+				  		<li><img src="img/wx.png"/></li>
+				  		<li><img src="img/wb.jpg" /></li>
+				  	</ul>
+			    </form> 
+			</div>
+		</div>
+	</body>
+</html>

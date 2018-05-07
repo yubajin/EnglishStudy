@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/video-js.css" />
+		<script type="text/javascript" src="js/video.min.js" ></script>
+		<script type="text/javascript" src="js/videojs-ie8.min.js" ></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script>videojs.options.flash.swf = "video-js.swf";</script>
+		<style>
+			#videocontent{
+				text-align: center;
+			}
+		</style>
+
+		<title></title>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>视频播放</h1>
+				<a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left">返回</a>
+			</div>
+			<div data-role="main">
+				<div id="videocontent">
+					<video width="320px" height="240px" controls="controls" poster="img/image5.jpg" >
+						<source  id="videosource" src="img/move2.mp4" type="video/mp4"></source>
+						你的浏览器不支持该视频播放
+					</video>
+				</div>
+				<div data-role="navbar">
+					<ul>
+						<li><a class="ui-btn ui-icon-arrow-u" onclick="displayCata()">目录</a></li>
+						<li><a class="ui-btn ui-icon-arrow-u" onclick="displayCour()">介绍</a></li>
+						<li><a class="ui-btn ui-icon-video " onclick="displayComm()">评论</a></li>
+						<li><a class="ui-btn ui-icon-eye " onclick="displayLec()">讲师</a></li>
+					</ul>
+				</div>
+				<div id="catalogue">
+					<ul data-role="listview">
+						<li><a>第一课时</a></li>
+						<li><a>第二课时</a></li>
+						<li><a>第三课时</a></li>
+						<li><a>第四课时</a></li>
+						<li><a>第五课时</a></li>
+						<li><a>第六课时</a></li>
+						<li><a>第七课时</a></li>
+						<li><a>第八课时</a></li>
+					</ul>
+				</div>
+				<div id="courseIntroduction">
+					<h4>[课程介绍]</h4>
+					<span>大学语法攻略，涵盖了整个大学所有知识点，是较为完整，较为权威的
+					语法学习视频</span>
+				</div>
+				<div id="comment">
+					<form method="post" action="">
+				    	<div class="ui-field-contain">
+					        <label for="info">我要评论：</label>
+					        <textarea name="addinfo" id="info" cols="100%" rows="6" ></textarea>
+				      	</div>
+				      	<input type="submit" data-inline="true" value="分享">
+				    </form> 
+				</div>
+				<div id="lecturer">
+					[朱有鹏]<br />
+					朱有鹏，毕业于北京师范大学，曾担任过翻译官,现在在新东方工作，
+					拥有非常丰富的英语教学经验，有自己独特的一套学习方法。
+				</div>
+			</div>
+		</div>
+		<script>
+			var catalogue = document.getElementById("catalogue");
+			var courseIntroduction = document.getElementById("courseIntroduction");
+			var comment = document.getElementById("comment");
+			var lecturer = document.getElementById("lecturer");
+			courseIntroduction.style.display="none";
+			comment.style.display="none";
+			lecturer.style.display="none";
+			function displayCata () {
+				catalogue.style.display="block";
+				courseIntroduction.style.display="none";
+				comment.style.display="none";
+				lecturer.style.display="none";
+			}
+			function displayCour () {
+				courseIntroduction.style.display="block";
+				catalogue.style.display="none";
+				comment.style.display="none";
+				lecturer.style.display="none";
+			}
+			function displayComm () {
+				comment.style.display="block";
+				catalogue.style.display="none";
+				courseIntroduction.style.display="none";
+				lecturer.style.display="none";
+			}
+			function displayLec () {
+				lecturer.style.display="block";
+				catalogue.style.display="none";
+				courseIntroduction.style.display="none";
+				comment.style.display="none";
+			}
+		</script>
+	</body>
+</html>

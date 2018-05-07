@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>视频</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			a{
+				display: block;
+				width:60%;
+				background: red;
+				margin: 0 auto;
+			}
+			ul li a img{
+				display: block;
+				padding: 4px 5px ;
+				margin: 20px auto;
+			}
+			#vidiotitle{
+				font-size: 18px;
+				font-weight: 800;
+			}
+			
+			#search{
+				width: 100%;
+				text-align: center;
+			}
+			#hometable{
+				width: 100%;
+				height: auto;
+			}
+			#search_td2{
+				width: 40px;
+			}
+			#search input{
+				width: 100%;
+				height: 40px;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div data-role="page" id="page">
+			<div id="main" data-role="main" class="ui-content">
+				<div id="search">
+					<table id="hometable">
+						<tr>
+							<td id="search_td1">
+								<input type="search" placeholder="在此次输入你需要搜索的课程或教师名"/> 
+							</td>
+							<td id="search_td2">
+								<a href="#" class="ui-btn ui-btn-inline ui-icon-search ui-corner-all" >搜索</a>
+							</td>
+						</tr>
+					</table> 
+				</div>
+				<div class="ui-grid-d ui-responsive">
+				    <div class="ui-block-a" >
+					    <center><a href="videoDetail.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow"><img width="80%" height="100px" src="img/image4.png"/></a>
+					    <span id="vidiotitle">四级全程1班</span></center></br>
+					</div>
+					<div class="ui-block-a">
+					    <center><a href="videoDetail1.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow"><img width="80%" height="100px" src="img/image5.jpg"/></a>
+					    <span id="vidiotitle">大学语法攻略</span></center></br>
+					</div>
+					<div class="ui-block-a">
+					    <center><a href="#" class="ui-btn ui-corner-all ui-shadow"><img width="80%" height="100px" src="img/image7.jpg"/></a>
+					    <span id="vidiotitle">万词王是怎样炼成的</span></center></br>
+					</div>
+					<div class="ui-block-a">
+					    <center><a href="#" class="ui-btn ui-corner-all ui-shadow"><img width="80%" height="100px" src="img/image6.png"/></a>
+					    <span id="vidiotitle">六级全程1班</span></center></br>
+					</div>
+      			</div>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					 <ul>
+				        <li><a href="index.html"  data-ajax="false" data-icon="home">主页</a></li>
+				        <li><a href="article.html" data-ajax="false" class="ui-btn ui-icon-arrow-u ui-btn-icon-top">文章</a></li>
+				        <li><a href="videoList.html" data-ajax="false" class="ui-btn ui-icon-video ui-btn-icon-top">视频</a></li>
+				        <li><a href="#" data-ajax="false" class="ui-btn ui-icon-eye ui-btn-icon-top">发现</a></li>
+				        <li><a href="user.html"  data-ajax="false" class="ui-btn ui-icon-user ui-btn-icon-top">个人</a></li>
+				      </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
